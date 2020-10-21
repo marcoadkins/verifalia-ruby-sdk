@@ -23,11 +23,11 @@ module Verifalia
 
       attr_reader :account_sid, :account_token
 
-      API_VERSION = 'v1.4'
+      API_VERSION = 'v2.2'
 
       DEFAULTS = {
-        hosts: ['https://api-1.verifalia.com', 'https://api-2.verifalia.com'],
-        api_version: 'v1.4'
+        hosts: ['https://api.verifalia.com'],
+        api_version: 'v2.2'
       }
 
       ##
