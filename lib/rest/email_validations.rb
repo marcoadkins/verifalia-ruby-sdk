@@ -49,7 +49,7 @@ module Verifalia
             resource.post content
           end
           @query_result = JSON.parse(@response)
-          @unique_id = @query_result["uniqueID"]
+          @unique_id = @query_result['overview']['id']
           @error = nil
           @unique_id
         rescue => e
