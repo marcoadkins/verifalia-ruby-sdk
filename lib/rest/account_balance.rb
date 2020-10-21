@@ -84,7 +84,7 @@ module Verifalia
             }
           }
           config[:hosts].map do |host|
-            api_url = "#{host}/#{config[:api_version]}/account-balance"
+            api_url = "#{host}/#{config[:api_version]}/credits/balance"
             RestClient::Resource.new api_url, opts
           end
         end
